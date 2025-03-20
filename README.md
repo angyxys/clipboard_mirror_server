@@ -3,6 +3,7 @@
 
 ## Requirements
 - Node v20.11.0
+- Yarn as Global
 - .NET Core 8.0 Desktop Runtime
 - Git (optional)
   
