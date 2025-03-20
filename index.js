@@ -13,7 +13,8 @@ app.use(morgan('dev'));
 io.on('connection', (socket) => {
   socket.on('keyboard', (data) => {
     io.emit('clipboard_paste', data);
+    console.log('Event - Keyboard: ', data);
   });
 });
 
-server.listen(8009);
+server.listen(8009, () => console.log('Server initialized on http://localhost:8009'));
